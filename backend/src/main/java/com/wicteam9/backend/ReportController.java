@@ -57,4 +57,18 @@ public class ReportController {
                     "Report validated, but database saving is not implemented"
                 ));
     }
+    
+    @GetMapping("/summary")
+    public ResponseEntity<?> getReportSummary() {
+
+        // TODO: Retrieve aggregated counts
+        // from teammate's PostgreSQL database.
+
+        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED)
+                .body(Map.of(
+                    "message",
+                    "Report summary database query is not implemented yet"
+                ));
+    }
+
 }
